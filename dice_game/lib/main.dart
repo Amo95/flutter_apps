@@ -5,15 +5,20 @@ void main() => runApp(
         home: Scaffold(
           body: Container(
             decoration: const BoxDecoration(
-              gradient: LinearGradient(colors: [
-                Color.fromARGB(255, 45, 31, 109),
-                Color.fromARGB(255, 64, 33, 114)
-              ]),
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 45, 31, 109),
+                  Color.fromARGB(255, 64, 33, 114)
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
             ),
             child: const Center(
               child: Text(
                 "Hello world!",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white, 
+                fontSize: 28),
               ),
             ),
           ),
