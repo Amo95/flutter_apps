@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
   const Color secondColor = Color.fromARGB(255, 64, 33, 114);
 
 void main() => runApp(
-      MaterialApp(
+      const MaterialApp(
         home: Scaffold(
           body: GradientContainer(firstColor, secondColor),
         ),
